@@ -64,7 +64,7 @@ export function Footer() {
                 <Globe className="w-5 h-5" />
               </motion.a>
               <motion.a
-                href="#"
+                href="mailto:info@fajrsoft.ae"
                 whileHover={{ scale: 1.1, rotateZ: -5 }}
                 className="w-10 h-10 bg-gradient-to-br from-gray-800 to-gray-700 rounded-lg flex items-center justify-center hover:from-purple-600 hover:to-pink-600 transition-all shadow-lg"
               >
@@ -78,27 +78,27 @@ export function Footer() {
             <h3 className="text-lg mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <button onClick={() => scrollToSection('home')} className="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block">
+                <button onClick={() => scrollToSection('home')} className="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block cursor-pointer">
                   Home
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('services')} className="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block">
+                <button onClick={() => scrollToSection('services')} className="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block cursor-pointer">
                   Services
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('about')} className="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block">
+                <button onClick={() => scrollToSection('about')} className="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block cursor-pointer">
                   About Us
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('portfolio')} className="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block">
+                <button onClick={() => scrollToSection('portfolio')} className="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block cursor-pointer">
                   Portfolio
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('testimonials')} className="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block">
+                <button onClick={() => scrollToSection('testimonials')} className="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block cursor-pointer">
                   Testimonials
                 </button>
               </li>
@@ -121,17 +121,17 @@ export function Footer() {
           <div>
             <h3 className="text-lg mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Contact Us</h3>
             <div className="space-y-3 text-gray-400">
-              <div className="flex items-start gap-3 hover:text-white transition-colors">
+              <a href="mailto:info@fajrsoft.ae" className="flex items-start gap-3 hover:text-white transition-colors cursor-pointer">
                 <Mail className="w-5 h-5 mt-1 flex-shrink-0" />
-                <span>contact@fajrsoft.ae</span>
-              </div>
-              <div className="flex items-start gap-3 hover:text-white transition-colors">
+                <span>info@fajrsoft.ae</span>
+              </a>
+              <a href="tel:+971585704475" className="flex items-start gap-3 hover:text-white transition-colors cursor-pointer">
                 <Phone className="w-5 h-5 mt-1 flex-shrink-0" />
-                <span>+971 XX XXX XXXX</span>
-              </div>
-              <div className="flex items-start gap-3 hover:text-white transition-colors">
+                <span>+971 58 579 4475</span>
+              </a>
+              <div className="flex items-start gap-3 hover:text-white transition-colors cursor-pointer">
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
-                <span>Dubai, United Arab Emirates</span>
+                <span>Abu Dhabi, United Arab Emirates</span>
               </div>
             </div>
           </div>

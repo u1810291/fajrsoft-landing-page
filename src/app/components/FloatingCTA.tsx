@@ -32,7 +32,7 @@ export function FloatingCTA() {
           exit={{ opacity: 0, y: 20, scale: 0.8 }}
           transition={{ duration: 0.3 }}
           className="fixed bottom-15 right-8 z-40"
-          whileHover={{ scale: 1.1, rotateZ: 5 }}
+          whileHover={{ scale: 1.1, rotateZ: 3 }}
           style={{ transformStyle: 'preserve-3d' }}
         >
           <motion.div
