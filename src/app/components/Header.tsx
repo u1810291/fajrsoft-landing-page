@@ -24,15 +24,14 @@ export function Header() {
   };
 
   return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-lg shadow-lg' : 'bg-white/80 backdrop-blur-sm'
-      }`}
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-lg shadow-lg' : 'bg-white/80 backdrop-blur-sm'
+        }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <motion.div 
+          <motion.div
             className="flex items-center gap-3"
             whileHover={{ scale: 1.05 }}
             style={{ transformStyle: 'preserve-3d' }}
@@ -41,7 +40,7 @@ export function Header() {
               <span className="text-white font-bold text-xl">F</span>
             </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Fajrsoft AE
+              Fajrsoft
             </span>
           </motion.div>
 
@@ -66,7 +65,7 @@ export function Header() {
               whileHover={{ scale: 1.05, rotateZ: 1 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button 
+              <Button
                 onClick={() => scrollToSection('contact')}
                 className="bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 hover:from-cyan-600 hover:via-blue-700 hover:to-purple-700 shadow-lg"
               >
@@ -77,7 +76,7 @@ export function Header() {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button 
+          <button
             className="md:hidden p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
@@ -104,7 +103,7 @@ export function Header() {
               <button onClick={() => scrollToSection('testimonials')} className="text-left text-gray-700 hover:text-blue-600 transition-colors">
                 Testimonials
               </button>
-              <Button 
+              <Button
                 onClick={() => scrollToSection('contact')}
                 className="bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 hover:from-cyan-600 hover:via-blue-700 hover:to-purple-700 w-full"
               >

@@ -36,19 +36,19 @@ export function About() {
             >
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 font-semibold text-sm">ABOUT US</span>
             </motion.div>
-            
+
             <h2 className="text-4xl md:text-5xl mb-6 bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 bg-clip-text text-transparent">
               7+ Years of Excellence in Digital Innovation
             </h2>
-            
+
             <p className="text-lg text-gray-700 mb-6">
-              At <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Fajrsoft AE</span>, we don't just deliver technology solutions—we 
-              craft exceptional digital experiences that transform businesses. Our VIP-level service approach ensures every client 
+              At <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Fajrsoft</span>, we don't just deliver technology solutions—we
+              craft exceptional digital experiences that transform businesses. Our VIP-level service approach ensures every client
               receives the attention, quality, and results they deserve.
             </p>
-            
+
             <p className="text-lg text-gray-700 mb-6">
-              With over seven years of proven expertise, we've partnered with local businesses across diverse industries, 
+              With over seven years of proven expertise, we've partnered with local businesses across diverse industries,
               helping them leverage technology to achieve their goals, streamline operations, and stay ahead of the competition.
             </p>
 
@@ -61,7 +61,7 @@ export function About() {
               ].map((item, index) => (
                 <motion.div
                   key={index}
-                  whileHover={{ 
+                  whileHover={{
                     scale: 1.05,
                     rotateY: 10,
                     z: 50,
@@ -96,14 +96,14 @@ export function About() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent" />
             </motion.div>
-            
+
             {/* 3D Floating Stats Card */}
             <motion.div
               initial={{ opacity: 0, y: 20, rotateX: -20 }}
               whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.3 }}
-              whileHover={{ 
+              whileHover={{
                 scale: 1.1,
                 rotateY: 10,
                 z: 100,
@@ -112,7 +112,7 @@ export function About() {
               className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-2xl p-8 border border-gray-100"
             >
               <div className="flex items-center gap-4">
-                <motion.div 
+                <motion.div
                   animate={{
                     rotate: [0, 360],
                   }}

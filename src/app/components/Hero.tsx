@@ -1,15 +1,16 @@
+import { useCallback } from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, Calendar } from 'lucide-react';
 import { Button } from './ui/button';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function Hero() {
-  const scrollToContact = () => {
+  const scrollToContact = useCallback(() => {
     const element = document.getElementById('contact');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-  };
+  }, []);
 
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
@@ -25,7 +26,7 @@ export function Hero() {
             repeat: Infinity,
             ease: 'linear',
           }}
-          className="absolute inset-0 opacity-30"
+          className="absolute inset-0 opacity-30 pt-100"
           style={{
             backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3), transparent 50%), radial-gradient(circle at 80% 80%, rgba(255, 119, 198, 0.3), transparent 50%), radial-gradient(circle at 40% 20%, rgba(138, 180, 248, 0.3), transparent 50%)',
             backgroundSize: '200% 200%',
@@ -77,10 +78,10 @@ export function Hero() {
             >
               <span className="text-white text-sm">🏆 7+ Years of Excellence</span>
             </motion.div>
-            
-            <motion.h1 
+
+            <motion.h1
               className="text-5xl md:text-7xl text-white mb-6"
-              style={{ 
+              style={{
                 textShadow: '0 4px 20px rgba(0,0,0,0.3)',
               }}
             >
@@ -89,14 +90,14 @@ export function Hero() {
                 Your Business
               </span>
             </motion.h1>
-            
-            <motion.p 
+
+            <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
               className="text-xl md:text-2xl text-gray-100 mb-8 max-w-2xl"
             >
-              Transform your business with premium web development, mobile apps, and automation solutions. 
+              Transform your business with premium web development, mobile apps, and automation solutions.
               Professional service you can trust.
             </motion.p>
 
@@ -106,7 +107,7 @@ export function Hero() {
                 whileTap={{ scale: 0.95 }}
                 style={{ transformStyle: 'preserve-3d' }}
               >
-                <Button 
+                <Button
                   size="lg"
                   onClick={scrollToContact}
                   className="bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 hover:from-cyan-600 hover:via-blue-600 hover:to-purple-700 text-lg px-8 py-6 shadow-2xl relative overflow-hidden group"
@@ -119,13 +120,13 @@ export function Hero() {
                   </span>
                 </Button>
               </motion.div>
-              
+
               <motion.div
                 whileHover={{ scale: 1.05, rotateZ: -1 }}
                 whileTap={{ scale: 0.95 }}
                 style={{ transformStyle: 'preserve-3d' }}
               >
-                <Button 
+                <Button
                   size="lg"
                   variant="outline"
                   onClick={() => {
@@ -140,11 +141,11 @@ export function Hero() {
             </div>
 
             {/* 3D Stats Cards */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="grid grid-cols-3 gap-8 mt-16 max-w-2xl"
+              className="grid grid-cols-3 gap-8 mt-16 max-w-2xl "
             >
               {[
                 { value: '7+', label: 'Years Experience' },
@@ -153,8 +154,8 @@ export function Hero() {
               ].map((stat, index) => (
                 <motion.div
                   key={index}
-                  whileHover={{ 
-                    scale: 1.1, 
+                  whileHover={{
+                    scale: 1.1,
                     rotateY: 5,
                     z: 50,
                   }}
@@ -173,7 +174,7 @@ export function Hero() {
       </div>
 
       {/* Animated Scroll Indicator */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
@@ -184,13 +185,13 @@ export function Hero() {
           transition={{ duration: 2, repeat: Infinity }}
           className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center p-2 backdrop-blur-sm"
         >
-          <motion.div 
+          <motion.div
             animate={{ scaleY: [1, 1.5, 1] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="w-1 h-3 bg-gradient-to-b from-cyan-400 to-purple-400 rounded-full" 
+            className="w-1 h-3 bg-gradient-to-b from-cyan-400 to-purple-400 rounded-full"
           />
         </motion.div>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 }

@@ -43,28 +43,28 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}
           <div>
-            <motion.div 
+            <motion.div
               className="flex items-center gap-3 mb-4"
               whileHover={{ scale: 1.05 }}
             >
               <div className="w-10 h-10 bg-gradient-to-br from-cyan-500 via-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
                 <span className="text-white font-bold text-xl">F</span>
               </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">Fajrsoft AE</span>
+              <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">Fajrsoft</span>
             </motion.div>
             <p className="text-gray-400 mb-4">
               VIP-level technology solutions for local businesses. Over 7 years of excellence in digital innovation.
             </p>
             <div className="flex gap-4">
-              <motion.a 
-                href="#" 
+              <motion.a
+                href="#"
                 whileHover={{ scale: 1.1, rotateZ: 5 }}
                 className="w-10 h-10 bg-gradient-to-br from-gray-800 to-gray-700 rounded-lg flex items-center justify-center hover:from-cyan-600 hover:to-blue-600 transition-all shadow-lg"
               >
                 <Globe className="w-5 h-5" />
               </motion.a>
-              <motion.a 
-                href="#" 
+              <motion.a
+                href="#"
                 whileHover={{ scale: 1.1, rotateZ: -5 }}
                 className="w-10 h-10 bg-gradient-to-br from-gray-800 to-gray-700 rounded-lg flex items-center justify-center hover:from-purple-600 hover:to-pink-600 transition-all shadow-lg"
               >
@@ -141,7 +141,7 @@ export function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Fajrsoft AE. All rights reserved.
+              © {new Date().getFullYear()} Fajrsoft. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm text-gray-400">
               <a href="#" className="hover:text-white hover:underline transition-all">Privacy Policy</a>

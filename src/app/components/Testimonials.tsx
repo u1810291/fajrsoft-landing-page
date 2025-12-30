@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: 'Ahmed Al-Mansoori',
     position: 'CEO, TechRetail Solutions',
-    content: 'Fajrsoft AE transformed our online presence completely. Their web development expertise and attention to detail exceeded our expectations. The VIP-level service is not just a promise—it\'s what they deliver every single day.',
+    content: 'Fajrsoft transformed our online presence completely. Their web development expertise and attention to detail exceeded our expectations. The VIP-level service is not just a promise—it\'s what they deliver every single day.',
     rating: 5,
     avatar: '🏢'
   },
@@ -20,7 +20,7 @@ const testimonials = [
   {
     name: 'Mohammed Hassan',
     position: 'Founder, HealthPlus Clinic',
-    content: 'We needed a reliable mobile app for our patients, and Fajrsoft AE delivered beyond our expectations. The app is intuitive, fast, and our patients love it. Highly recommend their services!',
+    content: 'We needed a reliable mobile app for our patients, and Fajrsoft delivered beyond our expectations. The app is intuitive, fast, and our patients love it. Highly recommend their services!',
     rating: 5,
     avatar: '🏥'
   },
