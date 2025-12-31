@@ -79,7 +79,7 @@ export function CaseStudyContent({ caseStudy }: { caseStudy: CaseStudy }) {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative rounded-2xl overflow-hidden shadow-2xl"
+            className="relative rounded-2xl overflow-hidden shadow-2xl mt-20"
           >
             <ImageWithFallback
               src={caseStudy.heroImage}
@@ -135,7 +135,10 @@ export function CaseStudyContent({ caseStudy }: { caseStudy: CaseStudy }) {
                 whileHover={{ scale: 1.05, rotateY: 5 }}
                 style={{ transformStyle: 'preserve-3d' }}
               >
-                <Card className="p-6 text-center bg-white hover:shadow-xl transition-shadow">
+                <Card className="
+                
+                p-6 bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100
+                ">
                   <div className="text-4xl mb-3">{metric.icon}</div>
                   <div className="text-4xl mb-2 bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent font-bold">
                     {metric.value}
@@ -225,7 +228,7 @@ export function CaseStudyContent({ caseStudy }: { caseStudy: CaseStudy }) {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ y: -5 }}
               >
-                <Card className="p-6 h-full bg-white hover:shadow-lg transition-shadow">
+                <Card className="p-6 bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
                   <div className="text-3xl mb-3">{feature.icon}</div>
                   <h3 className="text-xl mb-2">{feature.title}</h3>
                   <p className="text-gray-600">{feature.description}</p>
@@ -259,7 +262,7 @@ export function CaseStudyContent({ caseStudy }: { caseStudy: CaseStudy }) {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <Card className="p-6 bg-white">
+                <Card className="p-6 bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
                   <h3 className="text-lg mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-purple-600">
                     {stack.category}
                   </h3>
@@ -374,7 +377,7 @@ export function CaseStudyContent({ caseStudy }: { caseStudy: CaseStudy }) {
                   whileHover={{ y: -10 }}
                 >
                   <Link href={`/case-study/${project.slug}`}>
-                    <Card className="overflow-hidden hover:shadow-xl transition-shadow cursor-pointer">
+                    <Card className="overflow-hidden hover:shadow-xl transition-shadow cursor-pointer border-gray-200 dark:border-gray-800">
                       <div className="aspect-video overflow-hidden relative">
                         <ImageWithFallback
                           src={project.heroImage}

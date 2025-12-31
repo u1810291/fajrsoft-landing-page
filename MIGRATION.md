@@ -318,7 +318,7 @@ For questions or issues related to this migration:
 
 ## 📄 License
 
-© 2025 Fajrsoft AE. All rights reserved.
+© 2025 Fajrsoft. All rights reserved.
 
 ---
 

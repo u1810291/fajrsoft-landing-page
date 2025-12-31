@@ -26,17 +26,17 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${caseStudy.title} - ${caseStudy.category} | Fajrsoft AE`,
+    title: `${caseStudy.title} - ${caseStudy.category} | Fajrsoft`,
     description: caseStudy.overview,
     openGraph: {
-      title: `${caseStudy.title} - Fajrsoft AE`,
+      title: `${caseStudy.title} - Fajrsoft`,
       description: caseStudy.overview,
       images: [caseStudy.heroImage],
       type: 'article',
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${caseStudy.title} - Fajrsoft AE`,
+      title: `${caseStudy.title} - Fajrsoft`,
       description: caseStudy.overview,
       images: [caseStudy.heroImage],
     },

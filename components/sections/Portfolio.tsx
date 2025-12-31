@@ -14,8 +14,8 @@ const projects = [
     color: 'from-cyan-500 to-blue-500'
   },
   {
-    slug: 'mobile-banking-app',
-    title: 'Mobile Banking App',
+    slug: 'mobile-apps',
+    title: 'Mobile Apps',
     category: 'Mobile Development',
     description: 'Secure banking application with real-time transactions and biometric authentication',
     image: '/images/case-studies/mobile-banking-hero.jpg',

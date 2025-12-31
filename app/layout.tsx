@@ -6,8 +6,8 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Fajrsoft AE - VIP-Level Technology Solutions',
-    template: '%s | Fajrsoft AE',
+    default: 'Fajrsoft - VIP-Level Technology Solutions',
+    template: '%s | Fajrsoft',
   },
   description:
     'Transform your business with premium web development, mobile apps, and automation solutions. Professional service you can trust with 7+ years of excellence.',
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     'Dubai',
     'technology solutions',
   ],
-  authors: [{ name: 'Fajrsoft AE' }],
-  creator: 'Fajrsoft AE',
-  publisher: 'Fajrsoft AE',
+  authors: [{ name: 'Fajrsoft' }],
+  creator: 'Fajrsoft',
+  publisher: 'Fajrsoft',
   metadataBase: new URL('https://fajrsoft.ae'),
   alternates: {
     canonical: '/',
@@ -31,14 +31,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://fajrsoft.ae',
-    title: 'Fajrsoft AE - VIP-Level Technology Solutions',
+    title: 'Fajrsoft - VIP-Level Technology Solutions',
     description:
       'Transform your business with premium web development, mobile apps, and automation solutions.',
-    siteName: 'Fajrsoft AE',
+    siteName: 'Fajrsoft',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Fajrsoft AE - VIP-Level Technology Solutions',
+    title: 'Fajrsoft - VIP-Level Technology Solutions',
     description:
       'Transform your business with premium web development, mobile apps, and automation solutions.',
   },

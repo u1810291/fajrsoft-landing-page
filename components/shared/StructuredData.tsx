@@ -2,7 +2,7 @@ export function OrganizationSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Fajrsoft AE',
+    name: 'Fajrsoft',
     url: 'https://fajrsoft.ae',
     logo: 'https://fajrsoft.ae/logo.png',
     description:
@@ -37,7 +37,7 @@ export function ServiceSchema() {
       description: 'Custom, high-performance websites built with cutting-edge technologies',
       provider: {
         '@type': 'Organization',
-        name: 'Fajrsoft AE',
+        name: 'Fajrsoft',
       },
     },
     {
@@ -46,7 +46,7 @@ export function ServiceSchema() {
       description: 'Native and cross-platform mobile applications for iOS and Android',
       provider: {
         '@type': 'Organization',
-        name: 'Fajrsoft AE',
+        name: 'Fajrsoft',
       },
     },
     {
@@ -55,7 +55,7 @@ export function ServiceSchema() {
       description: 'Intelligent automation solutions customized for your workflow',
       provider: {
         '@type': 'Organization',
-        name: 'Fajrsoft AE',
+        name: 'Fajrsoft',
       },
     },
   ];

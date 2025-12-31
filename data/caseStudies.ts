@@ -117,7 +117,7 @@ export const caseStudies: CaseStudy[] = [
       description: 'Modern, intuitive interface designed for maximum conversions'
     },
     testimonial: {
-      quote: 'Fajrsoft AE transformed our online presence completely. The new platform not only looks amazing but has dramatically improved our sales and customer satisfaction. Their VIP-level support throughout the project was exceptional.',
+      quote: 'Fajrsoft transformed our online presence completely. The new platform not only looks amazing but has dramatically improved our sales and customer satisfaction. Their VIP-level support throughout the project was exceptional.',
       author: 'Sarah Johnson',
       role: 'CEO, Retail Company'
     },
@@ -125,20 +125,20 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: '2',
-    slug: 'mobile-banking-app',
-    title: 'Mobile Banking App',
+    slug: 'mobile-apps',
+    title: 'Mobile Apps',
     category: 'Mobile Development',
     client: 'Financial Services Provider',
     timeline: '6 months',
     heroImage: '/images/case-studies/mobile-banking-hero.jpg',
-    overview: 'A secure, feature-rich mobile banking application that brings modern banking services to users fingertips with biometric authentication, real-time transactions, and comprehensive account management.',
+    overview: 'A secure, feature-rich mobile applications that brings modern banking services to users fingertips with biometric authentication, real-time transactions, and comprehensive account management.',
     challenge: [
       'Meeting stringent security and compliance requirements',
       'Real-time transaction processing and notifications',
       'Supporting both iOS and Android with native performance',
       'Seamless integration with legacy banking systems'
     ],
-    solution: 'We built a cross-platform mobile banking solution with bank-grade security, featuring biometric authentication, end-to-end encryption, and real-time transaction updates. The app provides a full suite of banking services including transfers, bill payments, investment management, and 24/7 customer support.',
+    solution: 'We built a cross-platform mobile solutions with bank-grade security, featuring biometric authentication, end-to-end encryption, and real-time transaction updates. The app provides a full suite of banking services including transfers, bill payments, investment management, and 24/7 customer support.',
     metrics: [
       { value: '500K+', label: 'Active Users', icon: '👥' },
       { value: '4.8★', label: 'App Store Rating', icon: '⭐' },
@@ -204,7 +204,7 @@ export const caseStudies: CaseStudy[] = [
       description: 'Intuitive interface designed for effortless banking on mobile'
     },
     testimonial: {
-      quote: 'The mobile banking app developed by Fajrsoft AE has revolutionized how our customers interact with their finances. The security features are top-notch, and user feedback has been overwhelmingly positive.',
+      quote: 'The mobile apps developed by Fajrsoft has revolutionized how our customers interact with their finances. The security features are top-notch, and user feedback has been overwhelmingly positive.',
       author: 'Michael Chen',
       role: 'CTO, Financial Services Provider'
     },
