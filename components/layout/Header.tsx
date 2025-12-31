@@ -21,6 +21,18 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Disable body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMobileMenuOpen]);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -31,16 +43,13 @@ export function Header() {
 
   return (
     <>
-      {/* Spacer to prevent layout shift */}
-      <div className="h-20" />
+      {/* Spacer to prevent layout shift - responsive height */}
+      <div className="h-16 sm:h-18 md:h-20" />
 
-      <motion.header
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${isScrolled
-          ? 'bg-white/70 backdrop-blur-xl shadow-lg shadow-black/5 border-b border-white/20'
-          : 'bg-white/40 backdrop-blur-md border-b border-white/10'
+            ? 'bg-white/70 backdrop-blur-xl shadow-lg shadow-black/5 border-b border-white/20'
+            : 'bg-white/40 backdrop-blur-md border-b border-white/10'
           }`}
         style={{
           backdropFilter: isScrolled ? 'blur(20px) saturate(180%)' : 'blur(12px) saturate(150%)',
@@ -50,24 +59,24 @@ export function Header() {
         {/* Subtle gradient overlay for depth */}
         <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/30 to-transparent pointer-events-none" />
 
-        <div className="container mx-auto px-4 lg:px-8 relative">
-          <div className="flex items-center justify-between h-20">
-            {/* Logo */}
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="flex items-center justify-between h-16 sm:h-18 md:h-20">
+            {/* Logo - responsive sizing */}
             <motion.div
-              className="flex items-center gap-3 cursor-pointer"
+              className="flex items-center gap-2 sm:gap-3 cursor-pointer"
               onClick={() => scrollToSection('home')}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
               style={{ transformStyle: 'preserve-3d' }}
             >
               <motion.div
-                className="w-10 h-10 bg-gradient-to-br from-cyan-500 via-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/30"
+                className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-cyan-500 via-blue-600 to-purple-600 rounded-lg sm:rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/30"
                 whileHover={{ rotate: 5 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 10 }}
               >
-                <span className="text-white font-bold text-xl">F</span>
+                <span className="text-white font-bold text-lg sm:text-xl">F</span>
               </motion.div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Fajrsoft
               </span>
             </motion.div>
@@ -84,7 +93,7 @@ export function Header() {
                 <motion.button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="relative px-4 py-2 text-gray-700 font-medium transition-colors hover:text-gray-900 group"
+                  className="relative px-3 lg:px-4 py-2 text-sm lg:text-base text-gray-700 font-medium transition-colors hover:text-gray-900 group"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -103,19 +112,22 @@ export function Header() {
               >
                 <Button
                   onClick={() => scrollToSection('contact')}
-                  className="bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 hover:from-cyan-600 hover:via-blue-700 hover:to-purple-700 shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/40 transition-all duration-300"
+                  className="bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 hover:from-cyan-600 hover:via-blue-700 hover:to-purple-700 shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/40 transition-all duration-300 text-sm lg:text-base"
                 >
                   <Calendar className="w-4 h-4 mr-2" />
-                  Book Consultation
+                  <span className="hidden lg:inline">Book Consultation</span>
+                  <span className="lg:hidden">Book</span>
                 </Button>
               </motion.div>
             </nav>
 
-            {/* Mobile Menu Button */}
+            {/* Mobile Menu Button - minimum 44px touch target */}
             <motion.button
-              className="md:hidden p-2 rounded-lg hover:bg-gray-100/50 transition-colors"
+              className="md:hidden p-3 rounded-lg hover:bg-gray-100/50 transition-colors -mr-3"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               whileTap={{ scale: 0.95 }}
+              aria-label="Toggle menu"
+              aria-expanded={isMobileMenuOpen}
             >
               <AnimatePresence mode="wait">
                 {isMobileMenuOpen ? (
@@ -143,7 +155,7 @@ export function Header() {
             </motion.button>
           </div>
 
-          {/* Mobile Navigation */}
+          {/* Mobile Navigation - full width with proper touch targets */}
           <AnimatePresence>
             {isMobileMenuOpen && (
               <motion.nav
@@ -154,7 +166,7 @@ export function Header() {
                 className="md:hidden overflow-hidden"
               >
                 <div className="py-4 border-t border-gray-200/50 backdrop-blur-xl">
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col gap-1">
                     {[
                       { id: 'home', label: 'Home' },
                       { id: 'services', label: 'Services' },
@@ -168,7 +180,8 @@ export function Header() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: index * 0.05 }}
                         onClick={() => scrollToSection(item.id)}
-                        className="text-left px-4 py-3 text-gray-700 hover:text-gray-900 hover:bg-gray-100/50 rounded-lg transition-all font-medium"
+                        className="text-left px-4 py-4 text-base text-gray-700 hover:text-gray-900 hover:bg-gray-100/50 rounded-lg transition-all font-medium active:bg-gray-200/50"
+                        style={{ minHeight: '44px' }}
                       >
                         {item.label}
                       </motion.button>
@@ -177,11 +190,12 @@ export function Header() {
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.25 }}
-                      className="mt-2"
+                      className="mt-3 px-4"
                     >
                       <Button
                         onClick={() => scrollToSection('contact')}
-                        className="bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 hover:from-cyan-600 hover:via-blue-700 hover:to-purple-700 w-full shadow-lg"
+                        className="bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 hover:from-cyan-600 hover:via-blue-700 hover:to-purple-700 w-full shadow-lg text-base py-6"
+                        style={{ minHeight: '44px' }}
                       >
                         <Calendar className="w-4 h-4 mr-2" />
                         Book Free Consultation
@@ -193,7 +207,7 @@ export function Header() {
             )}
           </AnimatePresence>
         </div>
-      </motion.header>
+      </header>
     </>
   );
 }
