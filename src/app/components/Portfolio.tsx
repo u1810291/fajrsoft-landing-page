@@ -1,8 +1,10 @@
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 const projects = [
   {
+    slug: 'ecommerce-platform',
     title: 'E-Commerce Platform',
     category: 'Web Development',
     description: 'Full-featured online store with payment integration and inventory management',
@@ -17,6 +19,7 @@ const projects = [
     color: 'from-purple-500 to-pink-500'
   },
   {
+    slug: 'business-dashboard',
     title: 'Business Dashboard',
     category: 'Web Application',
     description: 'Advanced analytics dashboard with real-time data visualization and reporting',
@@ -24,6 +27,7 @@ const projects = [
     color: 'from-blue-500 to-purple-500'
   },
   {
+    slug: 'workflow-automation',
     title: 'Workflow Automation System',
     category: 'Business Automation',
     description: 'Custom automation solution reducing manual work by 70% and increasing efficiency',
@@ -89,58 +93,59 @@ export function Portfolio() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              whileHover={{
-                y: -15,
-                rotateX: 10,
-                rotateY: 5,
-                scale: 1.03,
-              }}
-              style={{ transformStyle: 'preserve-3d', perspective: 1000 }}
-              className="group cursor-pointer"
-            >
-              <div className="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-500">
-                <div className="aspect-video overflow-hidden relative">
-                  <ImageWithFallback
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                  {/* Gradient overlay */}
-                  <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-0 group-hover:opacity-70 transition-opacity duration-500 mix-blend-multiply`} />
-                </div>
+            <Link to={`/case-study/${project.slug}`} key={index}>
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                whileHover={{
+                  y: -15,
+                  rotateX: 10,
+                  rotateY: 5,
+                  scale: 1.03,
+                }}
+                style={{ transformStyle: 'preserve-3d', perspective: 1000 }}
+                className="group cursor-pointer"
+              >
+                <div className="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-500">
+                  <div className="aspect-video overflow-hidden relative">
+                    <ImageWithFallback
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    {/* Gradient overlay */}
+                    <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-0 group-hover:opacity-70 transition-opacity duration-500 mix-blend-multiply`} />
+                  </div>
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
 
-                <div className="absolute bottom-0 left-0 right-0 p-8 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                  <div className="absolute bottom-0 left-0 right-0 p-8 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <motion.div
+                      className={`text-sm text-transparent bg-clip-text bg-gradient-to-r ${project.color} mb-2 px-3 py-1 bg-white/90 inline-block rounded-full`}
+                    >
+                      {project.category}
+                    </motion.div>
+                    <h3 className="text-2xl mb-2 font-bold">{project.title}</h3>
+                    <p className="text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                      {project.description}
+                    </p>
+                  </div>
+
+                  {/* 3D floating arrow */}
                   <motion.div
-                    className={`text-sm text-transparent bg-clip-text bg-gradient-to-r ${project.color} mb-2 px-3 py-1 bg-white/90 inline-block rounded-full`}
+                    className="absolute top-6 right-6 w-14 h-14 bg-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 shadow-xl"
+                    whileHover={{ rotate: 45, scale: 1.1 }}
+                    style={{ transformStyle: 'preserve-3d' }}
                   >
-                    {project.category}
+                    <svg className={`w-7 h-7 bg-gradient-to-r ${project.color} bg-clip-text text-transparent`} fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M9 5l7 7-7 7" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
                   </motion.div>
-                  <h3 className="text-2xl mb-2 font-bold">{project.title}</h3>
-                  <p className="text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-                    {project.description}
-                  </p>
                 </div>
-
-                {/* 3D floating arrow */}
-                <motion.div
-                  className="absolute top-6 right-6 w-14 h-14 bg-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 shadow-xl"
-                  whileHover={{ rotate: 45, scale: 1.1 }}
-                  style={{ transformStyle: 'preserve-3d' }}
-                >
-                  <svg className={`w-7 h-7 bg-gradient-to-r ${project.color} bg-clip-text text-transparent`} fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M9 5l7 7-7 7" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </motion.div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </Link>
           ))}
         </div>
 
