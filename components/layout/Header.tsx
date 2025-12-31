@@ -39,8 +39,8 @@ export function Header() {
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${isScrolled
-            ? 'bg-white/70 backdrop-blur-xl shadow-lg shadow-black/5 border-b border-white/20'
-            : 'bg-white/40 backdrop-blur-md border-b border-white/10'
+          ? 'bg-white/70 backdrop-blur-xl shadow-lg shadow-black/5 border-b border-white/20'
+          : 'bg-white/40 backdrop-blur-md border-b border-white/10'
           }`}
         style={{
           backdropFilter: isScrolled ? 'blur(20px) saturate(180%)' : 'blur(12px) saturate(150%)',
