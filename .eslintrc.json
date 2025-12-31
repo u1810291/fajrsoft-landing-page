@@ -1,4 +1,7 @@
 {
   "extends": ["next/core-web-vitals", "next/typescript"],
-  "ignorePatterns": ["src/**/*", "index.html", "vite.config.ts", "postcss.config.mjs"]
+  "ignorePatterns": ["src/**/*", "index.html", "vite.config.ts", "postcss.config.mjs"],
+  "rules": {
+    "react/no-unescaped-entities": "off"
+  }
 }

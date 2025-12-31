@@ -1,4 +1,7 @@
 import type { Metadata } from 'next';
+import { Header } from '@/components/layout/Header';
+import { Footer } from '@/components/layout/Footer';
+import { FloatingCTA } from '@/components/layout/FloatingCTA';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -64,7 +67,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased">
         <div className="min-h-screen bg-white">
-          {children}
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <FloatingCTA />
         </div>
       </body>
     </html>
