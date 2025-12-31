@@ -10,9 +10,9 @@ const projects = [
     color: 'from-cyan-500 to-blue-500'
   },
   {
-    title: 'Mobile Banking App',
+    title: 'Mobile Client App',
     category: 'Mobile Development',
-    description: 'Secure banking application with real-time transactions and biometric authentication',
+    description: 'Secure client application with real-time transactions and biometric authentication',
     image: 'https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ258ZW58MXx8fHwxNzY2OTM0ODI4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     color: 'from-purple-500 to-pink-500'
   },
@@ -71,7 +71,7 @@ export function Portfolio() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <motion.div 
+          <motion.div
             initial={{ scale: 0.9 }}
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}
@@ -95,7 +95,7 @@ export function Portfolio() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              whileHover={{ 
+              whileHover={{
                 y: -15,
                 rotateX: 10,
                 rotateY: 5,
@@ -114,11 +114,11 @@ export function Portfolio() {
                   {/* Gradient overlay */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-0 group-hover:opacity-70 transition-opacity duration-500 mix-blend-multiply`} />
                 </div>
-                
+
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
-                
+
                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                  <motion.div 
+                  <motion.div
                     className={`text-sm text-transparent bg-clip-text bg-gradient-to-r ${project.color} mb-2 px-3 py-1 bg-white/90 inline-block rounded-full`}
                   >
                     {project.category}
@@ -130,7 +130,7 @@ export function Portfolio() {
                 </div>
 
                 {/* 3D floating arrow */}
-                <motion.div 
+                <motion.div
                   className="absolute top-6 right-6 w-14 h-14 bg-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 shadow-xl"
                   whileHover={{ rotate: 45, scale: 1.1 }}
                   style={{ transformStyle: 'preserve-3d' }}
