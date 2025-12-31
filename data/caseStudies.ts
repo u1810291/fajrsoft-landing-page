@@ -43,7 +43,7 @@ export const caseStudies: CaseStudy[] = [
     category: 'Web Development',
     client: 'Retail Company',
     timeline: '4 months',
-    heroImage: 'https://images.unsplash.com/photo-1603985585179-3d71c35a537c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NjY4NzE3MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    heroImage: '/images/case-studies/ecommerce-hero.jpg',
     overview: 'A comprehensive e-commerce solution built for a growing retail business, featuring advanced inventory management, payment gateway integration, and a seamless shopping experience optimized for conversions.',
     challenge: [
       'Complex inventory management across multiple warehouses',
@@ -110,9 +110,9 @@ export const caseStudies: CaseStudy[] = [
     ],
     showcase: {
       images: [
-        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200',
-        'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200',
-        'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200'
+        '/images/showcase/ecommerce-1.jpg',
+        '/images/showcase/ecommerce-2.jpg',
+        '/images/showcase/ecommerce-3.jpg'
       ],
       description: 'Modern, intuitive interface designed for maximum conversions'
     },
@@ -130,7 +130,7 @@ export const caseStudies: CaseStudy[] = [
     category: 'Mobile Development',
     client: 'Financial Services Provider',
     timeline: '6 months',
-    heroImage: 'https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ258ZW58MXx8fHwxNzY2OTM0ODI4fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    heroImage: '/images/case-studies/mobile-banking-hero.jpg',
     overview: 'A secure, feature-rich mobile banking application that brings modern banking services to users fingertips with biometric authentication, real-time transactions, and comprehensive account management.',
     challenge: [
       'Meeting stringent security and compliance requirements',
@@ -197,9 +197,9 @@ export const caseStudies: CaseStudy[] = [
     ],
     showcase: {
       images: [
-        'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200',
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200',
-        'https://images.unsplash.com/photo-1555421689-d68471e189f2?w=1200'
+        '/images/showcase/mobile-banking-1.jpg',
+        '/images/showcase/mobile-banking-2.jpg',
+        '/images/showcase/mobile-banking-3.jpg'
       ],
       description: 'Intuitive interface designed for effortless banking on mobile'
     },
@@ -217,7 +217,7 @@ export const caseStudies: CaseStudy[] = [
     category: 'Web Application',
     client: 'Enterprise Corporation',
     timeline: '5 months',
-    heroImage: 'https://images.unsplash.com/photo-1717386255767-52643970d483?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGF1dG9tYXRpb258ZW58MXx8fHwxNzY2OTM2MDc1fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    heroImage: '/images/case-studies/business-dashboard-hero.jpg',
     overview: 'An advanced business intelligence dashboard that consolidates data from multiple sources, providing real-time insights and actionable analytics for data-driven decision making.',
     challenge: [
       'Integrating data from 15+ different source systems',
@@ -284,9 +284,9 @@ export const caseStudies: CaseStudy[] = [
     ],
     showcase: {
       images: [
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200',
-        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200',
-        'https://images.unsplash.com/photo-1543286386-713bdd548da4?w=1200'
+        '/images/showcase/mobile-banking-2.jpg',
+        '/images/showcase/ecommerce-1.jpg',
+        '/images/showcase/dashboard-3.jpg'
       ],
       description: 'Powerful analytics platform with intuitive visualizations'
     },
@@ -304,7 +304,7 @@ export const caseStudies: CaseStudy[] = [
     category: 'Business Automation',
     client: 'Manufacturing Company',
     timeline: '3 months',
-    heroImage: 'https://images.unsplash.com/photo-1702046988296-40db18f8155ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwc3RhcnR1cCUyMG9mZmljZXxlbnwxfHx8fDE3NjY4MzczMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    heroImage: '/images/case-studies/workflow-automation-hero.jpg',
     overview: 'A custom workflow automation solution that streamlines manufacturing operations, reduces manual tasks, and improves efficiency across the entire production cycle.',
     challenge: [
       'Complex approval workflows with multiple stakeholders',
@@ -371,9 +371,9 @@ export const caseStudies: CaseStudy[] = [
     ],
     showcase: {
       images: [
-        'https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200',
-        'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200',
-        'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200'
+        '/images/showcase/workflow-1.jpg',
+        '/images/showcase/workflow-2.jpg',
+        '/images/showcase/workflow-3.jpg'
       ],
       description: 'Streamlined workflows with visual process management'
     },

@@ -10,14 +10,15 @@ const projects = [
     title: 'E-Commerce Platform',
     category: 'Web Development',
     description: 'Full-featured online store with payment integration and inventory management',
-    image: 'https://images.unsplash.com/photo-1603985585179-3d71c35a537c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NjY4NzE3MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    image: '/images/case-studies/ecommerce-hero.jpg',
     color: 'from-cyan-500 to-blue-500'
   },
   {
-    title: 'Mobile Client App',
+    slug: 'mobile-banking-app',
+    title: 'Mobile Banking App',
     category: 'Mobile Development',
-    description: 'Secure client application with real-time transactions and biometric authentication',
-    image: 'https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ258ZW58MXx8fHwxNzY2OTM0ODI4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    description: 'Secure banking application with real-time transactions and biometric authentication',
+    image: '/images/case-studies/mobile-banking-hero.jpg',
     color: 'from-purple-500 to-pink-500'
   },
   {
@@ -25,7 +26,7 @@ const projects = [
     title: 'Business Dashboard',
     category: 'Web Application',
     description: 'Advanced analytics dashboard with real-time data visualization and reporting',
-    image: 'https://images.unsplash.com/photo-1717386255767-52643970d483?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGF1dG9tYXRpb258ZW58MXx8fHwxNzY2OTM2MDc1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    image: '/images/case-studies/business-dashboard-hero.jpg',
     color: 'from-blue-500 to-purple-500'
   },
   {
@@ -33,7 +34,7 @@ const projects = [
     title: 'Workflow Automation System',
     category: 'Business Automation',
     description: 'Custom automation solution reducing manual work by 70% and increasing efficiency',
-    image: 'https://images.unsplash.com/photo-1702046988296-40db18f155ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwc3RhcnR1cCUyMG9mZmljZXxlbnwxfHx8fDE3NjY4MzczMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    image: '/images/case-studies/workflow-automation-hero.jpg',
     color: 'from-orange-500 to-rose-500'
   }
 ];
