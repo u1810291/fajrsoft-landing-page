@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "test:responsive": "node tests/responsive.test.js",
+    "test:responsive:dev": "npm run dev & sleep 5 && npm run test:responsive; kill %1"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
@@ -76,6 +78,7 @@
     "eslint": "^9.18.0",
     "eslint-config-next": "^15.1.6",
     "postcss": "^8.4.49",
+    "puppeteer": "^24.34.0",
     "tailwindcss": "^3.4.17",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.7.2"

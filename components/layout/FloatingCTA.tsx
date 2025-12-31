@@ -33,7 +33,7 @@ export function FloatingCTA() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 20, scale: 0.8 }}
           transition={{ duration: 0.3 }}
-          className="fixed bottom-16 right-8 z-40"
+          className="fixed bottom-20 sm:bottom-16 right-4 sm:right-6 md:right-8 z-40"
           whileHover={{ scale: 1.1, rotateZ: 3 }}
           style={{ transformStyle: 'preserve-3d' }}
         >
@@ -50,12 +50,14 @@ export function FloatingCTA() {
             <Button
               size="lg"
               onClick={scrollToContact}
-              className="bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 hover:from-cyan-600 hover:via-blue-700 hover:to-purple-700 shadow-2xl text-base px-6 py-6 rounded-full relative overflow-hidden group"
+              className="bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 hover:from-cyan-600 hover:via-blue-700 hover:to-purple-700 shadow-2xl text-sm sm:text-base px-4 sm:px-6 py-4 sm:py-6 rounded-full relative overflow-hidden group"
+              style={{ minHeight: '44px' }}
             >
               <span className="absolute inset-0 bg-white/20 transform translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
               <span className="relative flex items-center">
-                <Calendar className="w-5 h-5 mr-2" />
-                Book Free Consultation
+                <Calendar className="w-4 h-4 sm:w-5 sm:h-5 mr-1.5 sm:mr-2" />
+                <span className="hidden xs:inline">Book Free Consultation</span>
+                <span className="xs:hidden">Book Now</span>
               </span>
             </Button>
           </motion.div>

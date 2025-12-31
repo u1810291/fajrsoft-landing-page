@@ -50,7 +50,7 @@ export function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <motion.div 
+          <motion.div
             initial={{ scale: 0.9 }}
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}
@@ -77,14 +77,14 @@ export function Contact() {
           >
             <h3 className="text-3xl mb-6">Let's Talk About Your Project</h3>
             <p className="text-lg text-gray-600 mb-8">
-              Whether you need a new website, mobile app, or want to automate your business processes, 
+              Whether you need a new website, mobile app, or want to automate your business processes,
               we're here to help. Schedule a free consultation with our team.
             </p>
 
             <div className="space-y-4">
               {[
-                { icon: Mail, title: 'Email Us', info: 'contact@fajrsoft.ae', color: 'from-cyan-500 to-blue-600' },
-                { icon: Phone, title: 'Call Us', info: '+971 XX XXX XXXX', color: 'from-blue-500 to-purple-600' },
+                { icon: Mail, title: 'Email Us', info: 'info@fajrsoft.ae', color: 'from-cyan-500 to-blue-600' },
+                { icon: Phone, title: 'Call Us', info: '+971 58 570 4475', color: 'from-blue-500 to-purple-600' },
                 { icon: MapPin, title: 'Visit Us', info: 'Dubai, United Arab Emirates', color: 'from-purple-500 to-pink-600' }
               ].map((item, index) => (
                 <motion.div
@@ -93,7 +93,7 @@ export function Contact() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  whileHover={{ 
+                  whileHover={{
                     scale: 1.03,
                     rotateY: 5,
                     x: 10,
@@ -115,7 +115,7 @@ export function Contact() {
               ))}
             </div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -134,7 +134,7 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            whileHover={{ 
+            whileHover={{
               scale: 1.02,
               rotateY: 5,
             }}
@@ -159,7 +159,7 @@ export function Contact() {
               />
 
               <CardContent className="p-8 lg:p-12 flex flex-col justify-center h-full relative z-10">
-                <motion.div 
+                <motion.div
                   animate={{
                     scale: [1, 1.1, 1],
                     rotate: [0, 5, 0],
@@ -175,7 +175,7 @@ export function Contact() {
                 </motion.div>
                 <h3 className="text-3xl mb-4">Book Your Free Consultation</h3>
                 <p className="text-blue-100 text-lg mb-8">
-                  Get expert advice on your project with no obligation. We'll discuss your needs, 
+                  Get expert advice on your project with no obligation. We'll discuss your needs,
                   provide insights, and create a tailored solution for your business.
                 </p>
 
@@ -206,7 +206,7 @@ export function Contact() {
                   whileTap={{ scale: 0.95 }}
                   style={{ transformStyle: 'preserve-3d' }}
                 >
-                  <Button 
+                  <Button
                     size="lg"
                     onClick={handleCalendlyClick}
                     className="w-full bg-white text-blue-600 hover:bg-gray-100 text-lg py-6 shadow-xl relative overflow-hidden group"

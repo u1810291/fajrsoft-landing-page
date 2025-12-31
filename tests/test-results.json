@@ -1,0 +1,728 @@
+{
+  "timestamp": "2025-12-31T07:09:15.901Z",
+  "baseUrl": "http://localhost:3000",
+  "devices": {
+    "mobile": {
+      "name": "iPhone 12",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "isMobile": true,
+        "hasTouch": true
+      },
+      "tests": [
+        {
+          "name": "Section home exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section services exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section about exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section portfolio exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section testimonials exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section contact exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "No horizontal overflow",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Header is visible",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Footer is visible",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Touch targets meet 44px minimum",
+          "passed": false,
+          "critical": false,
+          "details": "Found 17 small targets"
+        },
+        {
+          "name": "Font sizes are readable (≥14px)",
+          "passed": false,
+          "critical": false,
+          "details": "Found 18 elements with small text"
+        },
+        {
+          "name": "All images loaded successfully",
+          "passed": false,
+          "critical": false,
+          "details": "0/5 images loaded"
+        },
+        {
+          "name": "DOM Interactive < 3000ms",
+          "passed": true,
+          "critical": false,
+          "details": "343ms"
+        },
+        {
+          "name": "Mobile menu button exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Mobile menu opens on click",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Images have alt text",
+          "passed": true,
+          "critical": false,
+          "details": "5/5 images have alt text"
+        },
+        {
+          "name": "Page has H1 heading",
+          "passed": true,
+          "critical": false
+        }
+      ],
+      "screenshots": [
+        "iphone-12-initial.png",
+        "iphone-12-bottom.png"
+      ],
+      "passed": 14,
+      "failed": 0,
+      "warnings": 3
+    },
+    "mobileSmall": {
+      "name": "iPhone SE",
+      "viewport": {
+        "width": 375,
+        "height": 667,
+        "isMobile": true,
+        "hasTouch": true
+      },
+      "tests": [
+        {
+          "name": "Section home exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section services exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section about exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section portfolio exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section testimonials exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section contact exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "No horizontal overflow",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Header is visible",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Footer is visible",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Touch targets meet 44px minimum",
+          "passed": false,
+          "critical": false,
+          "details": "Found 17 small targets"
+        },
+        {
+          "name": "Font sizes are readable (≥14px)",
+          "passed": false,
+          "critical": false,
+          "details": "Found 18 elements with small text"
+        },
+        {
+          "name": "All images loaded successfully",
+          "passed": false,
+          "critical": false,
+          "details": "0/5 images loaded"
+        },
+        {
+          "name": "DOM Interactive < 3000ms",
+          "passed": true,
+          "critical": false,
+          "details": "230ms"
+        },
+        {
+          "name": "Mobile menu button exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Mobile menu opens on click",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Images have alt text",
+          "passed": true,
+          "critical": false,
+          "details": "5/5 images have alt text"
+        },
+        {
+          "name": "Page has H1 heading",
+          "passed": true,
+          "critical": false
+        }
+      ],
+      "screenshots": [
+        "iphone-se-initial.png",
+        "iphone-se-bottom.png"
+      ],
+      "passed": 14,
+      "failed": 0,
+      "warnings": 3
+    },
+    "mobileLarge": {
+      "name": "iPhone 14 Pro Max",
+      "viewport": {
+        "width": 430,
+        "height": 932,
+        "isMobile": true,
+        "hasTouch": true
+      },
+      "tests": [
+        {
+          "name": "Section home exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section services exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section about exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section portfolio exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section testimonials exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section contact exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "No horizontal overflow",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Header is visible",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Footer is visible",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Touch targets meet 44px minimum",
+          "passed": false,
+          "critical": false,
+          "details": "Found 17 small targets"
+        },
+        {
+          "name": "Font sizes are readable (≥14px)",
+          "passed": false,
+          "critical": false,
+          "details": "Found 18 elements with small text"
+        },
+        {
+          "name": "All images loaded successfully",
+          "passed": false,
+          "critical": false,
+          "details": "0/5 images loaded"
+        },
+        {
+          "name": "DOM Interactive < 3000ms",
+          "passed": true,
+          "critical": false,
+          "details": "210ms"
+        },
+        {
+          "name": "Mobile menu button exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Mobile menu opens on click",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Images have alt text",
+          "passed": true,
+          "critical": false,
+          "details": "5/5 images have alt text"
+        },
+        {
+          "name": "Page has H1 heading",
+          "passed": true,
+          "critical": false
+        }
+      ],
+      "screenshots": [
+        "iphone-14-pro-max-initial.png",
+        "iphone-14-pro-max-bottom.png"
+      ],
+      "passed": 14,
+      "failed": 0,
+      "warnings": 3
+    },
+    "tablet": {
+      "name": "iPad",
+      "viewport": {
+        "width": 768,
+        "height": 1024,
+        "isMobile": true,
+        "hasTouch": true
+      },
+      "tests": [
+        {
+          "name": "Section home exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section services exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section about exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section portfolio exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section testimonials exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section contact exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "No horizontal overflow",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Header is visible",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Footer is visible",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Touch targets meet 44px minimum",
+          "passed": false,
+          "critical": false,
+          "details": "Found 18 small targets"
+        },
+        {
+          "name": "Font sizes are readable (≥14px)",
+          "passed": true,
+          "critical": false,
+          "details": null
+        },
+        {
+          "name": "All images loaded successfully",
+          "passed": false,
+          "critical": false,
+          "details": "0/5 images loaded"
+        },
+        {
+          "name": "DOM Interactive < 3000ms",
+          "passed": true,
+          "critical": false,
+          "details": "223ms"
+        },
+        {
+          "name": "Images have alt text",
+          "passed": true,
+          "critical": false,
+          "details": "5/5 images have alt text"
+        },
+        {
+          "name": "Page has H1 heading",
+          "passed": true,
+          "critical": false
+        }
+      ],
+      "screenshots": [
+        "ipad-initial.png",
+        "ipad-bottom.png"
+      ],
+      "passed": 13,
+      "failed": 0,
+      "warnings": 2
+    },
+    "tabletLarge": {
+      "name": "iPad Pro",
+      "viewport": {
+        "width": 1024,
+        "height": 1366,
+        "isMobile": true,
+        "hasTouch": true
+      },
+      "tests": [
+        {
+          "name": "Section home exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section services exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section about exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section portfolio exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section testimonials exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section contact exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "No horizontal overflow",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Header is visible",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Footer is visible",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Touch targets meet 44px minimum",
+          "passed": false,
+          "critical": false,
+          "details": "Found 18 small targets"
+        },
+        {
+          "name": "Font sizes are readable (≥14px)",
+          "passed": true,
+          "critical": false,
+          "details": null
+        },
+        {
+          "name": "All images loaded successfully",
+          "passed": false,
+          "critical": false,
+          "details": "0/5 images loaded"
+        },
+        {
+          "name": "DOM Interactive < 3000ms",
+          "passed": true,
+          "critical": false,
+          "details": "257ms"
+        },
+        {
+          "name": "Images have alt text",
+          "passed": true,
+          "critical": false,
+          "details": "5/5 images have alt text"
+        },
+        {
+          "name": "Page has H1 heading",
+          "passed": true,
+          "critical": false
+        }
+      ],
+      "screenshots": [
+        "ipad-pro-initial.png",
+        "ipad-pro-bottom.png"
+      ],
+      "passed": 13,
+      "failed": 0,
+      "warnings": 2
+    },
+    "desktop": {
+      "name": "Desktop 1920x1080",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "isMobile": false,
+        "hasTouch": false
+      },
+      "tests": [
+        {
+          "name": "Section home exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section services exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section about exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section portfolio exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section testimonials exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section contact exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "No horizontal overflow",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Header is visible",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Footer is visible",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Touch targets meet 44px minimum",
+          "passed": false,
+          "critical": false,
+          "details": "Found 18 small targets"
+        },
+        {
+          "name": "Font sizes are readable (≥14px)",
+          "passed": true,
+          "critical": false,
+          "details": null
+        },
+        {
+          "name": "All images loaded successfully",
+          "passed": false,
+          "critical": false,
+          "details": "0/5 images loaded"
+        },
+        {
+          "name": "DOM Interactive < 3000ms",
+          "passed": true,
+          "critical": false,
+          "details": "306ms"
+        },
+        {
+          "name": "Images have alt text",
+          "passed": true,
+          "critical": false,
+          "details": "5/5 images have alt text"
+        },
+        {
+          "name": "Page has H1 heading",
+          "passed": true,
+          "critical": false
+        }
+      ],
+      "screenshots": [
+        "desktop-1920x1080-initial.png",
+        "desktop-1920x1080-bottom.png"
+      ],
+      "passed": 13,
+      "failed": 0,
+      "warnings": 2
+    },
+    "desktopSmall": {
+      "name": "Desktop 1280x720",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "isMobile": false,
+        "hasTouch": false
+      },
+      "tests": [
+        {
+          "name": "Section home exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section services exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section about exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section portfolio exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section testimonials exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Section contact exists",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "No horizontal overflow",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Header is visible",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Footer is visible",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "name": "Touch targets meet 44px minimum",
+          "passed": false,
+          "critical": false,
+          "details": "Found 18 small targets"
+        },
+        {
+          "name": "Font sizes are readable (≥14px)",
+          "passed": true,
+          "critical": false,
+          "details": null
+        },
+        {
+          "name": "All images loaded successfully",
+          "passed": false,
+          "critical": false,
+          "details": "0/5 images loaded"
+        },
+        {
+          "name": "DOM Interactive < 3000ms",
+          "passed": true,
+          "critical": false,
+          "details": "235ms"
+        },
+        {
+          "name": "Images have alt text",
+          "passed": true,
+          "critical": false,
+          "details": "5/5 images have alt text"
+        },
+        {
+          "name": "Page has H1 heading",
+          "passed": true,
+          "critical": false
+        }
+      ],
+      "screenshots": [
+        "desktop-1280x720-initial.png",
+        "desktop-1280x720-bottom.png"
+      ],
+      "passed": 13,
+      "failed": 0,
+      "warnings": 2
+    }
+  },
+  "summary": {
+    "total": 111,
+    "passed": 94,
+    "failed": 0,
+    "warnings": 17
+  }
+}

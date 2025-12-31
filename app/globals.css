@@ -198,4 +198,24 @@
   ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(to bottom, #0891b2, #2563eb, #7e22ce);
   }
+
+  /* Respect user's motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Optimize mobile performance */
+  @media (max-width: 640px) {
+    * {
+      /* Reduce blur effects on mobile for better performance */
+      --blur-reduction: 0.5;
+    }
+  }
 }
