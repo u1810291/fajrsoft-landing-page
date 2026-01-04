@@ -4,14 +4,38 @@ import { motion } from 'motion/react';
 import { Calendar, Mail, Phone, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { useEffect } from 'react';
 
 export function Contact() {
-  const handleCalendlyClick = () => {
-    // In a real implementation, this would open Calendly widget
-    // For now, we'll show an alert
-    alert('Calendly integration placeholder - This would open your Calendly booking widget');
-    // Example Calendly integration:
-    // window.open('https://calendly.com/your-calendly-link', '_blank');
+  useEffect(() => {
+    // Ensure Calendly script is loaded
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+
+    if (!document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]')) {
+      document.body.appendChild(script);
+    }
+  }, []);
+
+  const handleCalendlyClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+
+    // Scroll to top smoothly so user can see the popup
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    // Small delay to let scroll start, then open popup
+    setTimeout(() => {
+      // Open Calendly popup widget
+      if (typeof window !== 'undefined' && (window as any).Calendly) {
+        (window as any).Calendly.showPopupWidget('https://calendly.com/fajrsoft-info');
+      } else {
+        // Fallback: open in new tab if Calendly script hasn't loaded yet
+        window.open('https://calendly.com/fajrsoft-info', '_blank');
+      }
+    }, 300);
+
+    return false;
   };
 
   return (
