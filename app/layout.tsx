@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { FloatingCTA } from '@/components/layout/FloatingCTA';
@@ -65,6 +66,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+      </head>
       <body className="antialiased">
         <div className="min-h-screen bg-white">
           <Header />
@@ -72,6 +76,29 @@ export default function RootLayout({
           <Footer />
           <FloatingCTA />
         </div>
+
+        {/* Calendly widget scripts */}
+        <Script
+          src="https://assets.calendly.com/assets/external/widget.js"
+          strategy="afterInteractive"
+        />
+        <Script id="calendly-init" strategy="afterInteractive">
+          {`
+            if (typeof window !== 'undefined') {
+              window.addEventListener('load', function() {
+                if (window.Calendly) {
+                  window.Calendly.initBadgeWidget({
+                    url: 'https://calendly.com/fajrsoft-info',
+                    text: 'Schedule time with me',
+                    color: '#0069ff',
+                    textColor: '#ffffff',
+                    branding: true
+                  });
+                }
+              });
+            }
+          `}
+        </Script>
       </body>
     </html>
   );
