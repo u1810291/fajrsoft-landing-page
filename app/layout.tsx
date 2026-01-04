@@ -25,6 +25,13 @@ export const metadata: Metadata = {
   creator: 'Fajrsoft',
   publisher: 'Fajrsoft',
   metadataBase: new URL('https://fajrsoft.ae'),
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   alternates: {
     canonical: '/',
   },
