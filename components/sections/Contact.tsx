@@ -6,6 +6,16 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { useEffect } from 'react';
 
+// Declare Calendly type for window object
+declare global {
+  interface Window {
+    Calendly?: {
+      showPopupWidget: (url: string) => void;
+      initBadgeWidget: (options: Record<string, unknown>) => void;
+    };
+  }
+}
+
 export function Contact() {
   useEffect(() => {
     // Ensure Calendly script is loaded
@@ -27,8 +37,8 @@ export function Contact() {
     // Small delay to let scroll start, then open popup
     setTimeout(() => {
       // Open Calendly popup widget
-      if (typeof window !== 'undefined' && (window as any).Calendly) {
-        (window as any).Calendly.showPopupWidget('https://calendly.com/fajrsoft-info');
+      if (typeof window !== 'undefined' && window.Calendly) {
+        window.Calendly.showPopupWidget('https://calendly.com/fajrsoft-info');
       } else {
         // Fallback: open in new tab if Calendly script hasn't loaded yet
         window.open('https://calendly.com/fajrsoft-info', '_blank');
